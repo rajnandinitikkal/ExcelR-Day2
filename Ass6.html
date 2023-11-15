@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic layout web page</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        nav{
+            width: 100%;
+            background-color: rgb(20, 20, 35);
+            color: white;
+            height: 70px;
+            font-size: 30px;
+            padding-left: 20px;
+            padding-top: 15px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .items{
+            background-color: bisque;
+            height: 100vh;
+            width: 50%;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px;
+            padding: 30px;
+            font-size: 20px;
+        }
+        footer{
+            background-color:  rgb(20, 20, 35);
+            color: white;
+            height: 150px;
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>Navbar</nav>
+    <div class="container">
+        <div class="items">
+            <div>section</div>
+            <div>Article</div>
+        </div>
+        <div class="items">aside</div>
+    </div>
+    <footer> copyright@2023
+    </footer>
+</body>
+</html>
